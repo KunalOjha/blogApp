@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>My Portfolio</title>
+    
+    <!--Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    
+    <!--Libraries -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
+    <!--Module -->
+    <script src="/app/scripts/modules/app.js"></script>
+    <!--Controllers -->
+    <script src="/app/scripts/controllers/main.js"></script>
+    <!--Directives-->
+
+</head>
+    
+ <!--Main Landing Page-->    
+<body ng-app="blogApp">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">The Developers' Blog</a> 
+
+        <ul class="nav navbar-nav">
+            <li> <a href="/#/articles">Articles</a>
+            </li>
+            <li> <a href="/#/gallery">Gallery</a>
+            </li>
+            <li> <a href="/#/subscribers">Subscribers</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+ <!-- Add your site or application content here -->
+    <div class="container" ng-view=""></div>
+    
+</body>
+</html>
